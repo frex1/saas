@@ -12,17 +12,25 @@
 
 # testing
 /coverage
+*.lcov
+.nyc_output
 
 # next.js
 /.next/
 /out/
+.next
+.turbo
+.swc
 
 # production
 /build
+dist
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+*.log
 
 # debug
 npm-debug.log*
@@ -30,12 +38,44 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files (keep examples / templates)
+.env
+.env.*
+!.env.example
+!.env*.example
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# eslint
+.eslintcache
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+htmlcov/
+.tox/
+.nox/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+
+# IDE / editor
+.idea/
+*.sublime-*
